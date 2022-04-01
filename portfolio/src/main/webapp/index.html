@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Esteban | Resume</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDt3UmDVlGJ4qyH9HZu8j9I_rsirPg7cn4"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/a91cfb259a.js" crossorigin="anonymous"></script>
+</head>
+<body onload="createMap();">
+    <!-- // Intro -->
+    <header id="about">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#work">Work Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact me</a>
+        </nav>
+        <div class="content-wrap">
+            <img src="ProfilePic.jpg" alt="Esteban Sanchez" heigh="451" width="400" class="profile-img column-narrow">
+            <div class="column-wide">
+                <h1 id="name">Esteban Sanchez</h1>
+                <h2>Software Engineer in the making</h2>
+                <p> Currently a student in a career in computer science. I also love learning languages, streaming, and voice acting.</p>
+                <p> Click button below for a random greeting card!</p>
+                <button onclick="showGreet();">
+                    Greeting Message
+                </button>
+                <p id="greeting"></p>
+            </div>
+        </div>
+        <a href="PDF/Resume%20-%20Esteban%20Sanchez.pdf" download class="button download">Download PDF</a>
+    </header>
+    
+    <main> 
+        <!-- Work Experience -->
+        <section id="work" class = "work">
+            <div class="content-wrap">
+                <h2>Work Experience</h2>
+
+                <!-- Job Details -->
+                <div class="column-narrow">
+                    <h3>Lead Programmer and Captain</h3>
+                        <p class="uppercase">FIRST Robotics Competition Team Borrebots</p>
+                        <p>2018-2019</p>
+                </div>
+                <div class="column-wide job-description">
+                    <p>Used labview and some python to design the controlling mechanism for the robot in the FIRST Robotics Competition, held in Monterrey, Mexico. Also served as Pilot and Team Captain.</p>
+                    &nbsp;
+                    <p>Contributions:</p>
+                    <ul>
+                        <li>Designed and wrote the code for piloting the unit</li>
+                        <li>Piloted the unit</li>
+                        <li>In charge of IT department and helped other departments</li>
+                    </ul>
+                </div>
+                <div class="column-narrow">
+                    <h3>On-site Interprator</h3>
+                    <p class="uppercase">ESASA/Watts</p>
+                    <p>January 2020</p>
+                </div>
+                <div class="column-wide job-description">
+                    <p>I was an in-person translator for ESASA, a Mexcian based company, in a project that took place in Fayettevile, North Carolina. Translated and interpreted from English to Spanish and back again for the costumers to understand each other when needed.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- // Education -->
+        <section id="education" class="education">
+            <div class="content-wrap">
+                <h2>Education</h2>
+
+                <!-- School details -->
+                <h3>Tec de Monterrey - Jalisco, MX.(2019-2023)</h3>
+                <p>Studied B.S. in Computer Science and Software Engineer.</p>
+                <div id="map"></div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- // Footer & contact info -->
+    <footer id="contact">
+        <div class="content-wrap">
+        <h2>Let's Keep in Touch!</h2>
+
+            <!-- Social media and contact links. Add or remove any networks. -->
+            <div class="contact-info">
+                <a href="mailto:ssteve246@gmail.com"><i class="fab fa-google"></i></a>
+                <a href="mailto:estebansanchez00@hotmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="#about"><i class="fas fa-globe"></i></a>
+                <a href="https://twitter.com/RealN_Hood"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/Esteban.Sanchez.NH"><i class="fab fa-facebook-square"></i></a>
+            </div>
+            <p>Copyright 2021 by Esteban Sánchez García</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!-- Making a pull request-->
